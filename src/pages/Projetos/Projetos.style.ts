@@ -12,18 +12,6 @@ export const VideoContainer = styled.div`
   }
 `;
 
-export const VideoBox = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-`;
-
-export const VideoTag = styled.video`
-  width: 500px;
-`;
-
 export const GitLink = styled.a`
   text-decoration: none;
   color: ${({ theme }) => theme.primary};
