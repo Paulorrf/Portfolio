@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Home from "./pages/Home/Home";
+import Portfolio from "./pages/Portfolio/Portfolio";
+import GlobalStyle from "./globalStyles";
+import NavBar from "./components/NavBar/NavBar";
+import Projetos from "./pages/Projetos/Projetos";
 
-function App() {
+import theme from "./theme";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { ThemeProvider } from "styled-components";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalStyle />
+      <ThemeProvider theme={theme}>
+        <BrowserRouter>
+          <NavBar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/projetos" element={<Projetos />} />
+          </Routes>
+        </BrowserRouter>
+      </ThemeProvider>
+    </>
   );
-}
+};
 
 export default App;
