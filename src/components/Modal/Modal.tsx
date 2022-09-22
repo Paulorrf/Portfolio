@@ -5,20 +5,18 @@ import { ModalContainer, OuterModal } from "./Modal.style";
 
 import VideoDisplay from "../../utils/VideoDisplay/VideoDisplay";
 
-const Modal = ({
-  showModal,
-  setShowModal,
-  currentVideo,
-}: {
+interface ModalProps {
   showModal: boolean;
   setShowModal: React.Dispatch<React.SetStateAction<boolean>>;
   currentVideo: any;
-}) => {
+}
+
+const Modal = ({ showModal, setShowModal, currentVideo }: ModalProps) => {
   const [isBrowser, setIsBrowser] = useState(false);
 
-  const modalRef: any = useRef();
+  const modalRef = useRef<HTMLDivElement>(null);
 
-  const closeModal = (e: any) => {
+  const closeModal = (e: React.MouseEvent<HTMLElement>) => {
     if (modalRef.current === e.target) {
       setShowModal(false);
     }
@@ -32,11 +30,6 @@ const Modal = ({
     <ModalContainer onClick={closeModal} ref={modalRef}>
       <OuterModal>
         <VideoDisplay video={currentVideo} size="1000" />
-        {/* <VideoBox>
-          <VideoTag autoPlay loop muted>
-            <source src={currentVideo} type="video/mp4" />
-          </VideoTag>
-        </VideoBox> */}
       </OuterModal>
     </ModalContainer>
   ) : null;

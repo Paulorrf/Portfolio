@@ -51,8 +51,8 @@ const Projetos = () => {
       />
 
       <VideoContainer>
-        {videos.map((video) => {
-          return <div>{createVideo(video[0], video[1])}</div>;
+        {videos.map((video, index) => {
+          return <div key={index}>{createVideo(video[0], video[1])}</div>;
         })}
       </VideoContainer>
     </div>

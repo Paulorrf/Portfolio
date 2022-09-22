@@ -21,7 +21,12 @@ const Conhecimentos: FC = () => {
   function displayIcons(arr: Array<ObjProps>): JSX.Element[] {
     return arr.map((iconObj: ObjProps): JSX.Element => {
       return (
-        <IconTooltip text={iconObj.text} Icon={iconObj.Icon} size="1.8rem" />
+        <IconTooltip
+          text={iconObj.text}
+          Icon={iconObj.Icon}
+          size="30"
+          key={iconObj.text}
+        />
       );
     });
   }

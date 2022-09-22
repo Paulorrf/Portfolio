@@ -22,7 +22,7 @@ const NavBar = () => {
       <ContainerLogo>
         <Logo>
           <Link to="/">
-            <FaSuitcase size="2rem" color="#fff" />
+            <FaSuitcase size="30" color="#fff" />
           </Link>
         </Logo>
 
@@ -30,13 +30,13 @@ const NavBar = () => {
           <button>
             {showNav ? (
               <AiOutlineClose
-                size="2rem"
+                size="30"
                 color="#fff"
                 onClick={() => setShowNav((prev) => !prev)}
               />
             ) : (
               <GiHamburgerMenu
-                size="2rem"
+                size="30"
                 color="#fff"
                 onClick={() => setShowNav((prev) => !prev)}
               />
@@ -63,7 +63,7 @@ const NavBar = () => {
               rel="noreferrer"
             >
               <AiFillGithub
-                size="2rem"
+                size="30"
                 color="#fff"
                 style={{ marginRight: "30px" }}
               />
@@ -74,7 +74,7 @@ const NavBar = () => {
               rel="noreferrer"
             >
               <AiFillLinkedin
-                size="2rem"
+                size="30"
                 color="#fff"
                 style={{ marginRight: "30px" }}
               />

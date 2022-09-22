@@ -42,7 +42,7 @@ const Portfolio = () => {
       </ProfileItem>
       <PortInfo>
         <PortInfoItem>
-          <BsHouseFill size="2rem" />
+          <BsHouseFill size="30" />
 
           <p>Rua Papa João XXIII, Cachoeirinha RS</p>
 
@@ -54,17 +54,17 @@ const Portfolio = () => {
             <IconTooltip
               text="Google Maps"
               Icon={BsArrowUpRight}
-              size="1rem"
+              size="20"
               color="#ff3d00"
             />
           </ExternalLink>
         </PortInfoItem>
         <PortInfoItem>
-          <BsFillTelephoneFill size="2rem" />
+          <BsFillTelephoneFill size="30" />
           <p>99195-2727</p>
         </PortInfoItem>
         <PortInfoItem>
-          <SiGmail size="2rem" />
+          <SiGmail size="30" />
           <p>paulorenatorf09@gmail.com</p>
         </PortInfoItem>
         <Line />
