@@ -23,6 +23,7 @@ export const Container = styled.div`
 
 export const Title = styled.h2`
   /* padding-bottom: 1rem; */
+  font-size: 2rem;
 `;
 
 export const Profession = styled.h3`
@@ -30,7 +31,9 @@ export const Profession = styled.h3`
 `;
 
 export const About = styled.p`
-  padding-top: 1rem;
+  padding-top: 1.4rem;
+  width: 60%;
+  margin: 0 auto;
 `;
 
 export const BtnContainer = styled.div`

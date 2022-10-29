@@ -7,6 +7,8 @@ import Countries_Gif from "../../assets/countries_gif.mp4";
 import TodoApp_Gif from "../../assets/todoApp_gif.mp4";
 import SpaceTourism_Gif from "../../assets/spaceTourism_gif.mp4";
 import CrowdFund_Gif from "../../assets/crowdfund_gif.mp4";
+import Forum_Gif from "../../assets/forum_gif.mp4";
+import MarvelApp_Gif from "../../assets/marvelApp_gif.mp4";
 
 import VideoDisplay from "../../utils/VideoDisplay/VideoDisplay";
 
@@ -15,7 +17,9 @@ const Projetos = () => {
   const [currentVideo, setCurrentVideo] = useState<any>();
 
   const videos = [
-    [Countries_Gif, "countries"],
+    [MarvelApp_Gif, "marvel-app"],
+    [Forum_Gif, "Forum-app"],
+    [Countries_Gif, "Countries"],
     [TodoApp_Gif, "Todo-App"],
     [SpaceTourism_Gif, "Space-Tourism"],
     [CrowdFund_Gif, "Crowdfunding"],

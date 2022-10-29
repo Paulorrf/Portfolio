@@ -18,9 +18,9 @@ const Home = () => {
       <Title>OLÁ, EU SOU PAULO RENATO</Title>
       <Profession>DESENVOLVEDOR FRONT-END JUNIOR</Profession>
       <About>
-        Estou procurando um trabalho Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Eos, est. Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Tempora, architecto?
+        Estou em busca de uma oportunidade para atuar no mercado de trabalho
+        como desenvolvedor front end, para ter crescimento profissional e para
+        expandir meus conhecimentos.
       </About>
 
       <BtnContainer>
@@ -31,7 +31,9 @@ const Home = () => {
         </div>
 
         <div>
-          <Button type="secondary">Baixar Portfolio</Button>
+          <a href="../../assets/teste.txt" download>
+            <Button type="secondary">Baixar Portfolio</Button>
+          </a>
         </div>
       </BtnContainer>
     </Container>
