@@ -10,7 +10,6 @@ import {
   FormacoesContainer,
 } from "./Portfolio.style";
 
-import FrontImg from "../../assets/homeFoto.png";
 import PerfilImg from "../../assets/imgPerfil.jpeg";
 
 import Conhecimentos from "../../components/Conhecimentos/Conhecimentos";
