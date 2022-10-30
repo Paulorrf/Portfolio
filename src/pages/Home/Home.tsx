@@ -13,6 +13,20 @@ import {
 import Button from "../../utils/Button/Button";
 
 const Home = () => {
+  const handleDownload = () => {
+    fetch("curriculo.pdf").then((response) => {
+      response.blob().then((blob) => {
+        // Creating new object of PDF file
+        const fileURL = window.URL.createObjectURL(blob);
+        // Setting various property values
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "pauloRenato.pdf";
+        alink.click();
+      });
+    });
+  };
+
   return (
     <Container>
       <Title>OLÁ, EU SOU PAULO RENATO</Title>
@@ -30,10 +44,8 @@ const Home = () => {
           </Link>
         </div>
 
-        <div>
-          <a href="../../assets/teste.txt" download>
-            <Button type="secondary">Baixar Portfolio</Button>
-          </a>
+        <div onClick={handleDownload}>
+          <Button type="secondary">Baixar Portfolio</Button>
         </div>
       </BtnContainer>
     </Container>
