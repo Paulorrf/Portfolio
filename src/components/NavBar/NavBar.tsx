@@ -69,7 +69,7 @@ const NavBar = () => {
               />
             </a>
             <a
-              href="https://github.com/paulorrf"
+              href="https://www.linkedin.com/in/paulo-renato-ramos-filho-532667253/"
               target="_blank"
               rel="noreferrer"
             >
