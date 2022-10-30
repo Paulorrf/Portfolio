@@ -14,7 +14,13 @@ import {
   SiNodedotjs,
   SiFirebase,
   SiMongodb,
+  SiJest,
+  SiGhostery,
+  SiTestinglibrary,
 } from "react-icons/si";
+
+import { GiBearFace } from "react-icons/gi";
+import { TbBrandNextjs } from "react-icons/tb";
 
 export const langIcons = [
   {
@@ -48,6 +54,22 @@ export const libIcons = [
     Icon: SiRedux,
   },
   {
+    text: "Zustand",
+    Icon: GiBearFace,
+  },
+  {
+    text: "Jotai",
+    Icon: SiGhostery,
+  },
+  {
+    text: "React testing library",
+    Icon: SiTestinglibrary,
+  },
+  {
+    text: "JEST",
+    Icon: SiJest,
+  },
+  {
     text: "Styled-Components",
     Icon: SiStyledcomponents,
   },
@@ -69,6 +91,10 @@ export const libIcons = [
   },
 ];
 export const frameworkIcons = [
+  {
+    text: "NextJS",
+    Icon: TbBrandNextjs,
+  },
   {
     text: "NodeJs",
     Icon: SiNodedotjs,
